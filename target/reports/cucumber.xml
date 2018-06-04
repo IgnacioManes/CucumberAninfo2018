@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="0.104971">
+<testcase classname="representar horas libres" name="Empleado cargo una cantidad baja de horas trabajadas" time="0.101179">
+<system-out><![CDATA[Dado que el empleado cargo "2" horas en la fecha "1"........................passed
+Cuando consulto las horas del empleado en esa fecha.........................passed
+Entonces se refleja que esta libre en color "verde".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="representar horas libres" name="Empleado cargo una cantidad media de horas trabajadas" time="0.000328">
+<system-out><![CDATA[Dado que el empleado cargo "4" horas en la fecha "1"........................passed
+Cuando consulto las horas del empleado en esa fecha.........................passed
+Entonces se refleja que no esta completamente ocupado en color "amarillo"...passed
+]]></system-out>
+</testcase>
+<testcase classname="representar horas libres" name="Empleado cargo una cantidad alta de horas trabajadas" time="0.000422">
+<system-out><![CDATA[Dado que el empleado cargo "7" horas en la fecha "1"........................passed
+Cuando consulto las horas del empleado en esa fecha.........................passed
+Entonces se refleja que esta ocupado en color "rojo"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="representar horas libres" name="Se consultan las horas de un empleado" time="0.000421">
+<system-out><![CDATA[Dado que el empleado tiene cargadas "8" horas...............................passed
+Cuando consulto las horas del mismo.........................................passed
+Entonces se muestran las "8" horas trabajadas del empleado..................passed
+]]></system-out>
+</testcase>
+<testcase classname="representar horas libres" name="Se filtran las horas por días" time="0.000589">
+<system-out><![CDATA[Dado que un empleado carga "6" horas el día "1", "8" horas el día "2" y "5" horas el día "3".passed
+Cuando se aplica el filtro por día..........................................passed
+Entonces se mostrarán las horas en "3" columnas distintas, una por cada día..passed
+]]></system-out>
+</testcase>
+<testcase classname="representar horas libres" name="Se filtran las horas por semana" time="0.000629">
+<system-out><![CDATA[Dado que un empleado carga "6" horas el día "1", "8" horas el día "2" y "5" horas el día "3".passed
+Cuando se aplica el filtro por semana.......................................passed
+Entonces se mostrarán el total de las horas semanales ("19" horas) en una sola columna..passed
+]]></system-out>
+</testcase>
+<testcase classname="representar horas libres" name="Se filtran las horas por mes" time="0.000827">
+<system-out><![CDATA[Dado que un empleado carga "26" horas la semana "1", "38" horas la semana "2" y "35" horas la semana "3".passed
+Cuando se aplica el filtro por mes..........................................passed
+Entonces se mostrarán el total de las horas mensuales ("99" horas) en una sola columna..passed
+]]></system-out>
+</testcase>
+<testcase classname="representar horas libres" name="Se filtran las horas por equipo de desarrollo" time="0.000576">
+<system-out><![CDATA[Dado que un empleado del equipo "1" carga "11" horas, un empleado del equipo "2" carga "12" horas.passed
+Cuando se aplica el filtro por equipo de desarrollo "1".....................passed
+Entonces se mostrará el detalle de las horas del empleado que cargó "11" horas..passed
+]]></system-out>
+</testcase>
+</testsuite>
