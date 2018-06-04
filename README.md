@@ -1,10 +1,8 @@
-# Proyecto base
+# Cucumber Aninfo 2018
 
-[![Build Status](https://travis-ci.org/nicopaez/proyecto-base-memo1.svg?branch=master)](https://travis-ci.org/nicopaez/proyecto-base-memo1)
+Este proyecto esta hecho en base al ejemplo dado en clase.
 
-Este proyecto es un ejemplo del uso de la herramienta Cucumber como medio de implementacion de la técnica BDD
-
-Para correr este ejemplo ejecutar:
+Para correrlo ejecutar:
 
 ```
 mvn test
