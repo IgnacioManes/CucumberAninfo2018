@@ -1,97 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="32" failures="0" name="fiuba.RunFeatureTest" time="0.015" errors="0" skipped="0">
+<testsuite tests="28" failures="0" name="fiuba.RunFeatureTest" time="0.009" errors="0" skipped="0">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
     <property name="java.vm.version" value="25.171-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/nacho/Desktop/proyecto-base-memo1"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Nacho\Documents\GitHub\CucumberAninfo2018"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/nacho/Desktop/proyecto-base-memo1"/>
-    <property name="java.runtime.version" value="1.8.0_171-8u171-b11-0ubuntu0.17.10.1-b11"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="user.dir" value="C:\Users\Nacho\Documents\GitHub\CucumberAninfo2018"/>
+    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.io.tmpdir" value="C:\Users\Nacho\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.5.4\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\Nacho\AppData\Local\Microsoft\WindowsApps;C:\Users\Nacho\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.5.4\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.13.0-43-generic"/>
-    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native/linux64"/>
-    <property name="user.home" value="/home/nacho"/>
-    <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.5.4\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Nacho"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="nacho"/>
-    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Nacho"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.5.4\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_171\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_171"/>
-    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
-    <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/usr/share/maven"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.5.4\bin\.."/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Escenario: Empleado cargo una cantidad baja de horas trabajadas" name="Dado que el empleado cargo &quot;2&quot; horas en la fecha &quot;1&quot;" time="0.003"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad baja de horas trabajadas" name="Cuando consulto las horas del empleado en esa fecha" time="0.002"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad baja de horas trabajadas" name="Entonces se refleja que esta libre en color &quot;verde&quot;" time="0"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad baja de horas trabajadas" name="Escenario: Empleado cargo una cantidad baja de horas trabajadas" time="0.001"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad media de horas trabajadas" name="Dado que el empleado cargo &quot;4&quot; horas en la fecha &quot;1&quot;" time="0"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad media de horas trabajadas" name="Cuando consulto las horas del empleado en esa fecha" time="0"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad media de horas trabajadas" name="Entonces se refleja que no esta completamente ocupado en color &quot;amarillo&quot;" time="0"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad media de horas trabajadas" name="Escenario: Empleado cargo una cantidad media de horas trabajadas" time="0.001"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad alta de horas trabajadas" name="Dado que el empleado cargo &quot;7&quot; horas en la fecha &quot;1&quot;" time="0"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad alta de horas trabajadas" name="Cuando consulto las horas del empleado en esa fecha" time="0.001"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad alta de horas trabajadas" name="Entonces se refleja que esta ocupado en color &quot;rojo&quot;" time="0"/>
-  <testcase classname="Escenario: Empleado cargo una cantidad alta de horas trabajadas" name="Escenario: Empleado cargo una cantidad alta de horas trabajadas" time="0.001"/>
-  <testcase classname="Escenario: Se consultan las horas de un empleado" name="Dado que el empleado tiene cargadas &quot;8&quot; horas" time="0"/>
-  <testcase classname="Escenario: Se consultan las horas de un empleado" name="Cuando consulto las horas del mismo" time="0"/>
-  <testcase classname="Escenario: Se consultan las horas de un empleado" name="Entonces se muestran las &quot;8&quot; horas trabajadas del empleado." time="0"/>
-  <testcase classname="Escenario: Se consultan las horas de un empleado" name="Escenario: Se consultan las horas de un empleado" time="0.001"/>
-  <testcase classname="Escenario: Se filtran las horas por días" name="Dado que un empleado carga &quot;6&quot; horas el día &quot;1&quot;, &quot;8&quot; horas el día &quot;2&quot; y &quot;5&quot; horas el día &quot;3&quot;" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por días" name="Cuando se aplica el filtro por día" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por días" name="Entonces se mostrarán las horas en &quot;3&quot; columnas distintas, una por cada día." time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por días" name="Escenario: Se filtran las horas por días" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por semana" name="Dado que un empleado carga &quot;6&quot; horas el día &quot;1&quot;, &quot;8&quot; horas el día &quot;2&quot; y &quot;5&quot; horas el día &quot;3&quot;" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por semana" name="Cuando se aplica el filtro por semana" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por semana" name="Entonces se mostrarán el total de las horas semanales (&quot;19&quot; horas) en una sola columna." time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por semana" name="Escenario: Se filtran las horas por semana" time="0.001"/>
-  <testcase classname="Escenario: Se filtran las horas por mes" name="Dado que un empleado carga &quot;26&quot; horas la semana &quot;1&quot;, &quot;38&quot; horas la semana &quot;2&quot; y &quot;35&quot; horas la semana &quot;3&quot;" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por mes" name="Cuando se aplica el filtro por mes" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por mes" name="Entonces se mostrarán el total de las horas mensuales (&quot;99&quot; horas) en una sola columna." time="0.001"/>
-  <testcase classname="Escenario: Se filtran las horas por mes" name="Escenario: Se filtran las horas por mes" time="0.002"/>
-  <testcase classname="Escenario: Se filtran las horas por equipo de desarrollo" name="Dado que un empleado del equipo &quot;1&quot; carga &quot;11&quot; horas, un empleado del equipo &quot;2&quot; carga &quot;12&quot; horas" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por equipo de desarrollo" name="Cuando se aplica el filtro por equipo de desarrollo &quot;1&quot;" time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por equipo de desarrollo" name="Entonces se mostrará el detalle de las horas del empleado que cargó &quot;11&quot; horas." time="0"/>
-  <testcase classname="Escenario: Se filtran las horas por equipo de desarrollo" name="Escenario: Se filtran las horas por equipo de desarrollo" time="0.001"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Dado que tengo la &quot;tarea1&quot; &quot;ocupada&quot;" time="0.008"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Cuando se la asigna al &quot;empleado1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Entonces la &quot;tarea1&quot; no queda asignada al &quot;empleado1&quot;." time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Escenario: Se le quiere asignar una tarea ocupada a un empelado" time="0.001"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Dado que el &quot;empleado1&quot; esta asignado al &quot;proyecto1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; del &quot;proyecto1&quot; al &quot;empleado1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Entonces la &quot;tarea1&quot; queda asignada al &quot;empleado1&quot;." time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Dado que el &quot;empleado1&quot; esta asignado al &quot;proyecto2&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; del &quot;proyecto1&quot; al &quot;empleado1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Entonces la &quot;tarea1&quot; no queda asignada al &quot;empleado1&quot;." time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" name="Dado que el &quot;empleado1&quot; esta asignado a el &quot;proyecto1&quot; en la &quot;iteracion2&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; de la &quot;iteracion1&quot; a el &quot;empleado1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" name="Entonces la &quot;tarea1&quot; no queda asignada al &quot;empleado1&quot;." time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" name="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de la iteracion actual a un empelado" name="Dado que el &quot;empleado1&quot; esta asignado a el &quot;proyecto1&quot; en la &quot;iteracion2&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de la iteracion actual a un empelado" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; de la &quot;iteracion2&quot; a el &quot;empleado1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de la iteracion actual a un empelado" name="Entonces la &quot;tarea1&quot; queda asignada al &quot;empleado1&quot;." time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre de la iteracion actual a un empelado" name="Escenario: Se le quiere asignar una tarea libre de la iteracion actual a un empelado" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla" name="Dado que el &quot;empleado1&quot; que no tiene la habilidad &quot;JAVA&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; que requiere la habilidad &quot;JAVA&quot; al &quot;empleado1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla" name="Entonces la &quot;tarea1&quot; no queda asignada al &quot;empleado1&quot;." time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla" name="Escenario: Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla" name="Dado que el &quot;empleado1&quot; que tiene la habilidad &quot;JAVA&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; que requiere la habilidad &quot;JAVA&quot; al &quot;empleado1&quot;" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla" name="Entonces la &quot;tarea1&quot; queda asignada al &quot;empleado1&quot;." time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla" name="Escenario: Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla" time="0"/>
 </testsuite>

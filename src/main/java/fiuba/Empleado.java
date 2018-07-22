@@ -2,40 +2,57 @@ package fiuba;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
-public class Empleado {
-    private String nombre;
-	private int equipoDesarrollo;
-	private Map<Integer,Integer> horasTrabajadas;
+import java.util.ArrayList;
+public class Empleado extends Recurso{
+	private String rol;
+	private float horasTrabajadas;
+	private List<Habilidad> habilidades;
+	private List<Tarea> tareas;
+	private Proyecto proyecto;
+	public Empleado(String nombre,String descripcion){
+		super(nombre,descripcion);
+		this.tareas = new ArrayList<Tarea>();
+		this.habilidades = new ArrayList<Habilidad>();
+		this.proyecto = new Proyecto("");
+	}
+	public float getHorasEstimadas(){return 0;}
+	public void agregarTarea(Tarea tarea){
+		if(puedeHacerLaTarea(tarea)){
+			tareas.add(tarea);
+		}
+	}
+	private boolean puedeHacerLaTarea(Tarea tarea){
+		if(tarea.getEstado().equals("libre") && proyecto.tieneLaTarea(tarea.getDesc())){
+			String nombreHabilidad=tarea.getHabilidad().getNombre();
+			if(nombreHabilidad!=""){
+				for (Habilidad habilidad : habilidades){
+					if(nombreHabilidad==habilidad.getNombre()){
+						return true;
+					}
+				}
+			}else{
+				return true;
+			}
 
-	public Empleado(String nombre,int equipoDesarrollo) {
-		this.horasTrabajadas = new HashMap<Integer,Integer>();
-		this.equipoDesarrollo = equipoDesarrollo;
-	    this.nombre = nombre;
-	}
-		
-	public void setHorasDia(int fecha,int horas) {
-		horasTrabajadas.put( fecha, horas);
+		}
+		return false;
 	}
 
-	public int getHorasDia(int fecha){
+	public void agregarHabilidad(Habilidad habilidad){
+		this.habilidades.add(habilidad);
+	}
+	public void setProyecto(Proyecto proyecto){
+		this.proyecto=proyecto;
+	}
+	public String getNombreProyecto(){ return "";}
 
-		return horasTrabajadas.get(fecha+1);
-	}
-
-	public int getHorasSemana(){
-		return horasTrabajadas.get(1)+horasTrabajadas.get(2)+horasTrabajadas.get(3);
-	}
-
-	public int getHorasMes(){
-		return horasTrabajadas.get(1)+horasTrabajadas.get(2)+horasTrabajadas.get(3);
-	}
-	public int getHoras(){
-		return horasTrabajadas.get(1);
-	}
-	public String getNombre(){
-		return nombre;
-	}
-	public int getEquipo(){
-		return equipoDesarrollo;
+	public String getTarea(String tareaDesc){ 
+		for (Tarea tarea : tareas) {
+	        if (tarea.getDesc().equals(tareaDesc)) {
+	            return tareaDesc;
+	        }
+	    }
+	    String vacio="";
+		return vacio;
 	}
 }

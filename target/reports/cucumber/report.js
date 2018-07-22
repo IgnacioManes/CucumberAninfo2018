@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("horas.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("tareas.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,547 +7,579 @@ formatter.feature({
     }
   ],
   "line": 2,
-  "name": "representar horas libres",
+  "name": "representar asignacion de tareas",
   "description": "",
-  "id": "representar-horas-libres",
+  "id": "representar-asignacion-de-tareas",
   "keyword": "Característica"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Empleado cargo una cantidad baja de horas trabajadas",
+  "name": "Se le quiere asignar una tarea ocupada a un empelado",
   "description": "",
-  "id": "representar-horas-libres;empleado-cargo-una-cantidad-baja-de-horas-trabajadas",
+  "id": "representar-asignacion-de-tareas;se-le-quiere-asignar-una-tarea-ocupada-a-un-empelado",
   "type": "scenario",
   "keyword": "Escenario"
 });
 formatter.step({
   "line": 5,
-  "name": "que el empleado cargo \"2\" horas en la fecha \"1\"",
+  "name": "que tengo la \"tarea1\" \"ocupada\"",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 6,
-  "name": "consulto las horas del empleado en esa fecha",
+  "name": "se la asigna al \"empleado1\"",
   "keyword": "Cuando "
 });
 formatter.step({
   "line": 7,
-  "name": "se refleja que esta libre en color \"verde\"",
+  "name": "la \"tarea1\" no queda asignada al \"empleado1\".",
   "keyword": "Entonces "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2",
-      "offset": 23
+      "val": "tarea1",
+      "offset": 14
     },
     {
-      "val": "1",
-      "offset": 45
+      "val": "ocupada",
+      "offset": 23
     }
   ],
-  "location": "HorasLibresSteps.que_el_empleado_cargo_horas(int,int)"
+  "location": "TareasSteps.que_tengo_la_tarea_estado(String,String)"
 });
 formatter.result({
-  "duration": 98577450,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HorasLibresSteps.consulto_las_horas_del_empleado()"
-});
-formatter.result({
-  "duration": 108723,
+  "duration": 160485131,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "verde",
-      "offset": 36
+      "val": "empleado1",
+      "offset": 17
     }
   ],
-  "location": "HorasLibresSteps.se_refleja_que_esta_libre_en_color(String)"
+  "location": "TareasSteps.se_la_asigna_a_al_empleado(String)"
 });
 formatter.result({
-  "duration": 2492398,
+  "duration": 781733,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 4
+    },
+    {
+      "val": "empleado1",
+      "offset": 34
+    }
+  ],
+  "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
+});
+formatter.result({
+  "duration": 2435156,
   "status": "passed"
 });
 formatter.scenario({
   "line": 9,
-  "name": "Empleado cargo una cantidad media de horas trabajadas",
+  "name": "Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto",
   "description": "",
-  "id": "representar-horas-libres;empleado-cargo-una-cantidad-media-de-horas-trabajadas",
+  "id": "representar-asignacion-de-tareas;se-le-quiere-asignar-una-tarea-libre-a-un-empelado-que-esta-asignado-al-proyecto",
   "type": "scenario",
   "keyword": "Escenario"
 });
 formatter.step({
   "line": 10,
-  "name": "que el empleado cargo \"4\" horas en la fecha \"1\"",
+  "name": "que el \"empleado1\" esta asignado al \"proyecto1\"",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 11,
-  "name": "consulto las horas del empleado en esa fecha",
+  "name": "se le asigna la \"tarea1\" \"libre\" del \"proyecto1\" al \"empleado1\"",
   "keyword": "Cuando "
 });
 formatter.step({
   "line": 12,
-  "name": "se refleja que no esta completamente ocupado en color \"amarillo\"",
+  "name": "la \"tarea1\" queda asignada al \"empleado1\".",
   "keyword": "Entonces "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "4",
-      "offset": 23
+      "val": "empleado1",
+      "offset": 8
     },
     {
-      "val": "1",
-      "offset": 45
+      "val": "proyecto1",
+      "offset": 37
     }
   ],
-  "location": "HorasLibresSteps.que_el_empleado_cargo_horas(int,int)"
+  "location": "TareasSteps.que_el_empleado_esta_asignado_al_proyecto(String,String)"
 });
 formatter.result({
-  "duration": 195101,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HorasLibresSteps.consulto_las_horas_del_empleado()"
-});
-formatter.result({
-  "duration": 19539,
+  "duration": 121244,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "amarillo",
-      "offset": 55
+      "val": "tarea1",
+      "offset": 17
+    },
+    {
+      "val": "libre",
+      "offset": 26
+    },
+    {
+      "val": "proyecto1",
+      "offset": 38
+    },
+    {
+      "val": "empleado1",
+      "offset": 53
     }
   ],
-  "location": "HorasLibresSteps.se_refleja_que_no_esta_completamente_ocupado_en_color(String)"
+  "location": "TareasSteps.se_le_asigna_la_tarea_libre_del_proyecto_al_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 113384,
+  "duration": 265955,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 4
+    },
+    {
+      "val": "empleado1",
+      "offset": 31
+    }
+  ],
+  "location": "TareasSteps.la_tarea_queda_asignada_al_empleado(String,String)"
+});
+formatter.result({
+  "duration": 110489,
   "status": "passed"
 });
 formatter.scenario({
   "line": 14,
-  "name": "Empleado cargo una cantidad alta de horas trabajadas",
+  "name": "Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto",
   "description": "",
-  "id": "representar-horas-libres;empleado-cargo-una-cantidad-alta-de-horas-trabajadas",
+  "id": "representar-asignacion-de-tareas;se-le-quiere-asignar-una-tarea-libre-a-un-empelado-que-no-esta-asignado-al-proyecto",
   "type": "scenario",
   "keyword": "Escenario"
 });
 formatter.step({
   "line": 15,
-  "name": "que el empleado cargo \"7\" horas en la fecha \"1\"",
+  "name": "que el \"empleado1\" esta asignado al \"proyecto2\"",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 16,
-  "name": "consulto las horas del empleado en esa fecha",
+  "name": "se le asigna la \"tarea1\" \"libre\" del \"proyecto1\" al \"empleado1\"",
   "keyword": "Cuando "
 });
 formatter.step({
   "line": 17,
-  "name": "se refleja que esta ocupado en color \"rojo\"",
+  "name": "la \"tarea1\" no queda asignada al \"empleado1\".",
   "keyword": "Entonces "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "7",
-      "offset": 23
+      "val": "empleado1",
+      "offset": 8
     },
     {
-      "val": "1",
-      "offset": 45
+      "val": "proyecto2",
+      "offset": 37
     }
   ],
-  "location": "HorasLibresSteps.que_el_empleado_cargo_horas(int,int)"
+  "location": "TareasSteps.que_el_empleado_esta_asignado_al_proyecto(String,String)"
 });
 formatter.result({
-  "duration": 236944,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HorasLibresSteps.consulto_las_horas_del_empleado()"
-});
-formatter.result({
-  "duration": 37329,
+  "duration": 132000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "rojo",
+      "val": "tarea1",
+      "offset": 17
+    },
+    {
+      "val": "libre",
+      "offset": 26
+    },
+    {
+      "val": "proyecto1",
       "offset": 38
+    },
+    {
+      "val": "empleado1",
+      "offset": 53
     }
   ],
-  "location": "HorasLibresSteps.se_refleja_que_esta_ocupado_en_color(String)"
+  "location": "TareasSteps.se_le_asigna_la_tarea_libre_del_proyecto_al_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 147418,
+  "duration": 149111,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 4
+    },
+    {
+      "val": "empleado1",
+      "offset": 34
+    }
+  ],
+  "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
+});
+formatter.result({
+  "duration": 61111,
   "status": "passed"
 });
 formatter.scenario({
   "line": 19,
-  "name": "Se consultan las horas de un empleado",
+  "name": "Se le quiere asignar una tarea libre de otra iteracion a un empelado",
   "description": "",
-  "id": "representar-horas-libres;se-consultan-las-horas-de-un-empleado",
+  "id": "representar-asignacion-de-tareas;se-le-quiere-asignar-una-tarea-libre-de-otra-iteracion-a-un-empelado",
   "type": "scenario",
   "keyword": "Escenario"
 });
 formatter.step({
   "line": 20,
-  "name": "que el empleado tiene cargadas \"8\" horas",
+  "name": "que el \"empleado1\" esta asignado a el \"proyecto1\" en la \"iteracion2\"",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 21,
-  "name": "consulto las horas del mismo",
+  "name": "se le asigna la \"tarea1\" \"libre\" de la \"iteracion1\" a el \"empleado1\"",
   "keyword": "Cuando "
 });
 formatter.step({
   "line": 22,
-  "name": "se muestran las \"8\" horas trabajadas del empleado.",
+  "name": "la \"tarea1\" no queda asignada al \"empleado1\".",
   "keyword": "Entonces "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "8",
-      "offset": 32
+      "val": "empleado1",
+      "offset": 8
+    },
+    {
+      "val": "proyecto1",
+      "offset": 39
+    },
+    {
+      "val": "iteracion2",
+      "offset": 57
     }
   ],
-  "location": "HorasLibresSteps.que_el_empleado_tiene_cargadas_horas(int)"
+  "location": "TareasSteps.que_el_empleado_esta_asignado_a_el_proyecto_en_la_iteracion(String,String,String)"
 });
 formatter.result({
-  "duration": 141835,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HorasLibresSteps.consulto_las_horas()"
-});
-formatter.result({
-  "duration": 45950,
+  "duration": 171112,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "8",
+      "val": "tarea1",
       "offset": 17
+    },
+    {
+      "val": "libre",
+      "offset": 26
+    },
+    {
+      "val": "iteracion1",
+      "offset": 40
+    },
+    {
+      "val": "empleado1",
+      "offset": 58
     }
   ],
-  "location": "HorasLibresSteps.que_el_empleado_cargo_horas(int)"
+  "location": "TareasSteps.se_le_asigna_la_tarea_estado_de_la_iteracion_a_el_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 233400,
+  "duration": 180889,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 4
+    },
+    {
+      "val": "empleado1",
+      "offset": 34
+    }
+  ],
+  "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
+});
+formatter.result({
+  "duration": 103645,
   "status": "passed"
 });
 formatter.scenario({
   "line": 24,
-  "name": "Se filtran las horas por días",
+  "name": "Se le quiere asignar una tarea libre de la iteracion actual a un empelado",
   "description": "",
-  "id": "representar-horas-libres;se-filtran-las-horas-por-días",
+  "id": "representar-asignacion-de-tareas;se-le-quiere-asignar-una-tarea-libre-de-la-iteracion-actual-a-un-empelado",
   "type": "scenario",
   "keyword": "Escenario"
 });
 formatter.step({
   "line": 25,
-  "name": "que un empleado carga \"6\" horas el día \"1\", \"8\" horas el día \"2\" y \"5\" horas el día \"3\"",
+  "name": "que el \"empleado1\" esta asignado a el \"proyecto1\" en la \"iteracion2\"",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 26,
-  "name": "se aplica el filtro por día",
+  "name": "se le asigna la \"tarea1\" \"libre\" de la \"iteracion2\" a el \"empleado1\"",
   "keyword": "Cuando "
 });
 formatter.step({
   "line": 27,
-  "name": "se mostrarán las horas en \"3\" columnas distintas, una por cada día.",
+  "name": "la \"tarea1\" queda asignada al \"empleado1\".",
   "keyword": "Entonces "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "6",
-      "offset": 23
+      "val": "empleado1",
+      "offset": 8
     },
     {
-      "val": "1",
-      "offset": 40
+      "val": "proyecto1",
+      "offset": 39
     },
     {
-      "val": "8",
-      "offset": 45
-    },
-    {
-      "val": "2",
-      "offset": 62
-    },
-    {
-      "val": "5",
-      "offset": 68
-    },
-    {
-      "val": "3",
-      "offset": 85
+      "val": "iteracion2",
+      "offset": 57
     }
   ],
-  "location": "HorasLibresSteps.que_un_empleado_carga_horas_3_días(int,int,int,int,int,int)"
+  "location": "TareasSteps.que_el_empleado_esta_asignado_a_el_proyecto_en_la_iteracion(String,String,String)"
 });
 formatter.result({
-  "duration": 416957,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HorasLibresSteps.se_aplica_el_filtro_por_día()"
-});
-formatter.result({
-  "duration": 30218,
+  "duration": 183333,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "3",
-      "offset": 27
+      "val": "tarea1",
+      "offset": 17
+    },
+    {
+      "val": "libre",
+      "offset": 26
+    },
+    {
+      "val": "iteracion2",
+      "offset": 40
+    },
+    {
+      "val": "empleado1",
+      "offset": 58
     }
   ],
-  "location": "HorasLibresSteps.se_mostrarán_las_horas_en_columnas_distintas(int)"
+  "location": "TareasSteps.se_le_asigna_la_tarea_estado_de_la_iteracion_a_el_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 141403,
+  "duration": 122223,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 4
+    },
+    {
+      "val": "empleado1",
+      "offset": 31
+    }
+  ],
+  "location": "TareasSteps.la_tarea_queda_asignada_al_empleado(String,String)"
+});
+formatter.result({
+  "duration": 112933,
   "status": "passed"
 });
 formatter.scenario({
   "line": 29,
-  "name": "Se filtran las horas por semana",
+  "name": "Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla",
   "description": "",
-  "id": "representar-horas-libres;se-filtran-las-horas-por-semana",
+  "id": "representar-asignacion-de-tareas;se-le-quiere-asignar-una-tarea-libre-a-un-empelado-que-no-tiene-habilidades-para-resolverla",
   "type": "scenario",
   "keyword": "Escenario"
 });
 formatter.step({
   "line": 30,
-  "name": "que un empleado carga \"6\" horas el día \"1\", \"8\" horas el día \"2\" y \"5\" horas el día \"3\"",
+  "name": "que el \"empleado1\" que no tiene la habilidad \"JAVA\"",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 31,
-  "name": "se aplica el filtro por semana",
+  "name": "se le asigna la \"tarea1\" \"libre\" que requiere la habilidad \"JAVA\" al \"empleado1\"",
   "keyword": "Cuando "
 });
 formatter.step({
   "line": 32,
-  "name": "se mostrarán el total de las horas semanales (\"19\" horas) en una sola columna.",
+  "name": "la \"tarea1\" no queda asignada al \"empleado1\".",
   "keyword": "Entonces "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "6",
-      "offset": 23
+      "val": "empleado1",
+      "offset": 8
     },
     {
-      "val": "1",
-      "offset": 40
-    },
-    {
-      "val": "8",
-      "offset": 45
-    },
-    {
-      "val": "2",
-      "offset": 62
-    },
-    {
-      "val": "5",
-      "offset": 68
-    },
-    {
-      "val": "3",
-      "offset": 85
-    }
-  ],
-  "location": "HorasLibresSteps.que_un_empleado_carga_horas_3_días(int,int,int,int,int,int)"
-});
-formatter.result({
-  "duration": 342317,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HorasLibresSteps.se_aplica_el_filtro_por_semana()"
-});
-formatter.result({
-  "duration": 53147,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "19",
-      "offset": 47
-    }
-  ],
-  "location": "HorasLibresSteps.se_mostrarán_las_horas_en_columna(int)"
-});
-formatter.result({
-  "duration": 233954,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 34,
-  "name": "Se filtran las horas por mes",
-  "description": "",
-  "id": "representar-horas-libres;se-filtran-las-horas-por-mes",
-  "type": "scenario",
-  "keyword": "Escenario"
-});
-formatter.step({
-  "line": 35,
-  "name": "que un empleado carga \"26\" horas la semana \"1\", \"38\" horas la semana \"2\" y \"35\" horas la semana \"3\"",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 36,
-  "name": "se aplica el filtro por mes",
-  "keyword": "Cuando "
-});
-formatter.step({
-  "line": 37,
-  "name": "se mostrarán el total de las horas mensuales (\"99\" horas) en una sola columna.",
-  "keyword": "Entonces "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "26",
-      "offset": 23
-    },
-    {
-      "val": "1",
-      "offset": 44
-    },
-    {
-      "val": "38",
-      "offset": 49
-    },
-    {
-      "val": "2",
-      "offset": 70
-    },
-    {
-      "val": "35",
-      "offset": 76
-    },
-    {
-      "val": "3",
-      "offset": 97
-    }
-  ],
-  "location": "HorasLibresSteps.que_el_empleado_cargo_horas_semanas(int,int,int,int,int,int)"
-});
-formatter.result({
-  "duration": 512776,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HorasLibresSteps.se_aplica_el_filtro_por_mes()"
-});
-formatter.result({
-  "duration": 66275,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "99",
-      "offset": 47
-    }
-  ],
-  "location": "HorasLibresSteps.que_el_empleado_cargo_horas_en_columna_mes(int)"
-});
-formatter.result({
-  "duration": 247613,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 39,
-  "name": "Se filtran las horas por equipo de desarrollo",
-  "description": "",
-  "id": "representar-horas-libres;se-filtran-las-horas-por-equipo-de-desarrollo",
-  "type": "scenario",
-  "keyword": "Escenario"
-});
-formatter.step({
-  "line": 40,
-  "name": "que un empleado del equipo \"1\" carga \"11\" horas, un empleado del equipo \"2\" carga \"12\" horas",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 41,
-  "name": "se aplica el filtro por equipo de desarrollo \"1\"",
-  "keyword": "Cuando "
-});
-formatter.step({
-  "line": 42,
-  "name": "se mostrará el detalle de las horas del empleado que cargó \"11\" horas.",
-  "keyword": "Entonces "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 28
-    },
-    {
-      "val": "11",
-      "offset": 38
-    },
-    {
-      "val": "2",
-      "offset": 73
-    },
-    {
-      "val": "12",
-      "offset": 83
-    }
-  ],
-  "location": "HorasLibresSteps.que_el_empleado_del_equipo_cargo_horas(int,int,int,int)"
-});
-formatter.result({
-  "duration": 242665,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
+      "val": "JAVA",
       "offset": 46
     }
   ],
-  "location": "HorasLibresSteps.se_aplica_el_filtro_por_equipo(int)"
+  "location": "TareasSteps.que_el_empleado_que_no_tiene_la_habilidad(String,String)"
 });
 formatter.result({
-  "duration": 133629,
+  "duration": 282578,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "11",
+      "val": "tarea1",
+      "offset": 17
+    },
+    {
+      "val": "libre",
+      "offset": 26
+    },
+    {
+      "val": "JAVA",
       "offset": 60
+    },
+    {
+      "val": "empleado1",
+      "offset": 70
     }
   ],
-  "location": "HorasLibresSteps.se_mostrará_el_detalle_de_las_horas_del_empleado(int)"
+  "location": "TareasSteps.se_le_asigna_la_tarea_estado_que_requiere_la_habilidad(String,String,String,String)"
 });
 formatter.result({
-  "duration": 199774,
+  "duration": 198978,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 4
+    },
+    {
+      "val": "empleado1",
+      "offset": 34
+    }
+  ],
+  "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
+});
+formatter.result({
+  "duration": 114400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 35,
+  "name": "Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla",
+  "description": "",
+  "id": "representar-asignacion-de-tareas;se-le-quiere-asignar-una-tarea-libre-a-un-empelado-que-tiene-habilidades-para-resolverla",
+  "type": "scenario",
+  "keyword": "Escenario"
+});
+formatter.step({
+  "line": 36,
+  "name": "que el \"empleado1\" que tiene la habilidad \"JAVA\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 37,
+  "name": "se le asigna la \"tarea1\" \"libre\" que requiere la habilidad \"JAVA\" al \"empleado1\"",
+  "keyword": "Cuando "
+});
+formatter.step({
+  "line": 38,
+  "name": "la \"tarea1\" queda asignada al \"empleado1\".",
+  "keyword": "Entonces "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "empleado1",
+      "offset": 8
+    },
+    {
+      "val": "JAVA",
+      "offset": 43
+    }
+  ],
+  "location": "TareasSteps.que_el_empleado_que_tiene_la_habilidad(String,String)"
+});
+formatter.result({
+  "duration": 146666,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 17
+    },
+    {
+      "val": "libre",
+      "offset": 26
+    },
+    {
+      "val": "JAVA",
+      "offset": 60
+    },
+    {
+      "val": "empleado1",
+      "offset": 70
+    }
+  ],
+  "location": "TareasSteps.se_le_asigna_la_tarea_estado_que_requiere_la_habilidad(String,String,String,String)"
+});
+formatter.result({
+  "duration": 164267,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tarea1",
+      "offset": 4
+    },
+    {
+      "val": "empleado1",
+      "offset": 31
+    }
+  ],
+  "location": "TareasSteps.la_tarea_queda_asignada_al_empleado(String,String)"
+});
+formatter.result({
+  "duration": 77244,
   "status": "passed"
 });
 });
