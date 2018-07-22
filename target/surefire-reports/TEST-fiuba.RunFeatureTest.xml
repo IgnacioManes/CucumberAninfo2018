@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="28" failures="0" name="fiuba.RunFeatureTest" time="0.009" errors="0" skipped="0">
+<testsuite tests="28" failures="0" name="fiuba.RunFeatureTest" time="0.006" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -65,18 +65,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Dado que tengo la &quot;tarea1&quot; &quot;ocupada&quot;" time="0.008"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Dado que tengo la &quot;tarea1&quot; &quot;ocupada&quot;" time="0.003"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Cuando se la asigna al &quot;empleado1&quot;" time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Entonces la &quot;tarea1&quot; no queda asignada al &quot;empleado1&quot;." time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea ocupada a un empelado" name="Escenario: Se le quiere asignar una tarea ocupada a un empelado" time="0.001"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Dado que el &quot;empleado1&quot; esta asignado al &quot;proyecto1&quot;" time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; del &quot;proyecto1&quot; al &quot;empleado1&quot;" time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Entonces la &quot;tarea1&quot; queda asignada al &quot;empleado1&quot;." time="0"/>
-  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" name="Escenario: Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" time="0.001"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Dado que el &quot;empleado1&quot; esta asignado al &quot;proyecto2&quot;" time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; del &quot;proyecto1&quot; al &quot;empleado1&quot;" time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Entonces la &quot;tarea1&quot; no queda asignada al &quot;empleado1&quot;." time="0"/>
-  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" time="0"/>
+  <testcase classname="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" name="Escenario: Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" time="0.001"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" name="Dado que el &quot;empleado1&quot; esta asignado a el &quot;proyecto1&quot; en la &quot;iteracion2&quot;" time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" name="Cuando se le asigna la &quot;tarea1&quot; &quot;libre&quot; de la &quot;iteracion1&quot; a el &quot;empleado1&quot;" time="0"/>
   <testcase classname="Escenario: Se le quiere asignar una tarea libre de otra iteracion a un empelado" name="Entonces la &quot;tarea1&quot; no queda asignada al &quot;empleado1&quot;." time="0"/>

@@ -49,7 +49,7 @@ formatter.match({
   "location": "TareasSteps.que_tengo_la_tarea_estado(String,String)"
 });
 formatter.result({
-  "duration": 160485131,
+  "duration": 366600224,
   "status": "passed"
 });
 formatter.match({
@@ -62,7 +62,7 @@ formatter.match({
   "location": "TareasSteps.se_la_asigna_a_al_empleado(String)"
 });
 formatter.result({
-  "duration": 781733,
+  "duration": 452711,
   "status": "passed"
 });
 formatter.match({
@@ -79,7 +79,7 @@ formatter.match({
   "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
 });
 formatter.result({
-  "duration": 2435156,
+  "duration": 3526845,
   "status": "passed"
 });
 formatter.scenario({
@@ -119,7 +119,7 @@ formatter.match({
   "location": "TareasSteps.que_el_empleado_esta_asignado_al_proyecto(String,String)"
 });
 formatter.result({
-  "duration": 121244,
+  "duration": 169644,
   "status": "passed"
 });
 formatter.match({
@@ -144,7 +144,7 @@ formatter.match({
   "location": "TareasSteps.se_le_asigna_la_tarea_libre_del_proyecto_al_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 265955,
+  "duration": 364711,
   "status": "passed"
 });
 formatter.match({
@@ -161,7 +161,7 @@ formatter.match({
   "location": "TareasSteps.la_tarea_queda_asignada_al_empleado(String,String)"
 });
 formatter.result({
-  "duration": 110489,
+  "duration": 162312,
   "status": "passed"
 });
 formatter.scenario({
@@ -201,7 +201,7 @@ formatter.match({
   "location": "TareasSteps.que_el_empleado_esta_asignado_al_proyecto(String,String)"
 });
 formatter.result({
-  "duration": 132000,
+  "duration": 476177,
   "status": "passed"
 });
 formatter.match({
@@ -226,7 +226,7 @@ formatter.match({
   "location": "TareasSteps.se_le_asigna_la_tarea_libre_del_proyecto_al_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 149111,
+  "duration": 143733,
   "status": "passed"
 });
 formatter.match({
@@ -243,7 +243,7 @@ formatter.match({
   "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
 });
 formatter.result({
-  "duration": 61111,
+  "duration": 136889,
   "status": "passed"
 });
 formatter.scenario({
@@ -287,7 +287,7 @@ formatter.match({
   "location": "TareasSteps.que_el_empleado_esta_asignado_a_el_proyecto_en_la_iteracion(String,String,String)"
 });
 formatter.result({
-  "duration": 171112,
+  "duration": 255200,
   "status": "passed"
 });
 formatter.match({
@@ -312,7 +312,7 @@ formatter.match({
   "location": "TareasSteps.se_le_asigna_la_tarea_estado_de_la_iteracion_a_el_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 180889,
+  "duration": 566623,
   "status": "passed"
 });
 formatter.match({
@@ -329,7 +329,7 @@ formatter.match({
   "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
 });
 formatter.result({
-  "duration": 103645,
+  "duration": 168178,
   "status": "passed"
 });
 formatter.scenario({
@@ -373,7 +373,7 @@ formatter.match({
   "location": "TareasSteps.que_el_empleado_esta_asignado_a_el_proyecto_en_la_iteracion(String,String,String)"
 });
 formatter.result({
-  "duration": 183333,
+  "duration": 221466,
   "status": "passed"
 });
 formatter.match({
@@ -398,7 +398,7 @@ formatter.match({
   "location": "TareasSteps.se_le_asigna_la_tarea_estado_de_la_iteracion_a_el_empleado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 122223,
+  "duration": 243956,
   "status": "passed"
 });
 formatter.match({
@@ -415,7 +415,7 @@ formatter.match({
   "location": "TareasSteps.la_tarea_queda_asignada_al_empleado(String,String)"
 });
 formatter.result({
-  "duration": 112933,
+  "duration": 347600,
   "status": "passed"
 });
 formatter.scenario({
@@ -455,7 +455,7 @@ formatter.match({
   "location": "TareasSteps.que_el_empleado_que_no_tiene_la_habilidad(String,String)"
 });
 formatter.result({
-  "duration": 282578,
+  "duration": 171112,
   "status": "passed"
 });
 formatter.match({
@@ -480,7 +480,7 @@ formatter.match({
   "location": "TareasSteps.se_le_asigna_la_tarea_estado_que_requiere_la_habilidad(String,String,String,String)"
 });
 formatter.result({
-  "duration": 198978,
+  "duration": 976800,
   "status": "passed"
 });
 formatter.match({
@@ -497,7 +497,7 @@ formatter.match({
   "location": "TareasSteps.la_tarea_no_queda_asignada_al_empleado(String,String)"
 });
 formatter.result({
-  "duration": 114400,
+  "duration": 269866,
   "status": "passed"
 });
 formatter.scenario({
@@ -537,7 +537,7 @@ formatter.match({
   "location": "TareasSteps.que_el_empleado_que_tiene_la_habilidad(String,String)"
 });
 formatter.result({
-  "duration": 146666,
+  "duration": 161822,
   "status": "passed"
 });
 formatter.match({
@@ -562,7 +562,7 @@ formatter.match({
   "location": "TareasSteps.se_le_asigna_la_tarea_estado_que_requiere_la_habilidad(String,String,String,String)"
 });
 formatter.result({
-  "duration": 164267,
+  "duration": 139333,
   "status": "passed"
 });
 formatter.match({
@@ -579,7 +579,7 @@ formatter.match({
   "location": "TareasSteps.la_tarea_queda_asignada_al_empleado(String,String)"
 });
 formatter.result({
-  "duration": 77244,
+  "duration": 88489,
   "status": "passed"
 });
 });

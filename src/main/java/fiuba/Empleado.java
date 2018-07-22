@@ -8,7 +8,6 @@ public class Empleado extends Recurso{
 	private float horasTrabajadas;
 	private List<Habilidad> habilidades;
 	private List<Tarea> tareas;
-	private Proyecto proyecto;
 	public Empleado(String nombre,String descripcion){
 		super(nombre,descripcion);
 		this.tareas = new ArrayList<Tarea>();

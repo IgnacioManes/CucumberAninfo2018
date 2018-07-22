@@ -14,7 +14,7 @@ public class Tarea {
 	private float estimacion;
 	private int Prioridad;
 	private Habilidad habilidad;
-	private Iteracion iteracion;
+
 
 	public Tarea(String descripcion,String estado) {
 	    this.descripcion = descripcion;
@@ -28,9 +28,6 @@ public class Tarea {
 	}
 	public Habilidad getHabilidad() {
 		return habilidad;
-	}
-	public Iteracion getIteracion(){
-		return iteracion;
 	}
 	public String getEstado(){return estado;}
 	public String getDesc(){return descripcion;}

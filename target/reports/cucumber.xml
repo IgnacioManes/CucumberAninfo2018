@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="0.1664">
-<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea ocupada a un empelado" time="0.163702">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="0.375645">
+<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea ocupada a un empelado" time="0.37058">
 <system-out><![CDATA[Dado que tengo la "tarea1" "ocupada"........................................passed
 Cuando se la asigna al "empleado1"..........................................passed
 Entonces la "tarea1" no queda asignada al "empleado1".......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" time="0.000498">
+<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que esta asignado al proyecto" time="0.000697">
 <system-out><![CDATA[Dado que el "empleado1" esta asignado al "proyecto1"........................passed
 Cuando se le asigna la "tarea1" "libre" del "proyecto1" al "empleado1"......passed
 Entonces la "tarea1" queda asignada al "empleado1"..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" time="0.000342">
+<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que no esta asignado al proyecto" time="0.000757">
 <system-out><![CDATA[Dado que el "empleado1" esta asignado al "proyecto2"........................passed
 Cuando se le asigna la "tarea1" "libre" del "proyecto1" al "empleado1"......passed
 Entonces la "tarea1" no queda asignada al "empleado1".......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre de otra iteracion a un empelado" time="0.000456">
+<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre de otra iteracion a un empelado" time="0.00099">
 <system-out><![CDATA[Dado que el "empleado1" esta asignado a el "proyecto1" en la "iteracion2"...passed
 Cuando se le asigna la "tarea1" "libre" de la "iteracion1" a el "empleado1".passed
 Entonces la "tarea1" no queda asignada al "empleado1".......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre de la iteracion actual a un empelado" time="0.000418">
+<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre de la iteracion actual a un empelado" time="0.000813">
 <system-out><![CDATA[Dado que el "empleado1" esta asignado a el "proyecto1" en la "iteracion2"...passed
 Cuando se le asigna la "tarea1" "libre" de la "iteracion2" a el "empleado1".passed
 Entonces la "tarea1" queda asignada al "empleado1"..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla" time="0.000596">
+<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que no tiene habilidades para resolverla" time="0.001418">
 <system-out><![CDATA[Dado que el "empleado1" que no tiene la habilidad "JAVA"....................passed
 Cuando se le asigna la "tarea1" "libre" que requiere la habilidad "JAVA" al "empleado1".passed
 Entonces la "tarea1" no queda asignada al "empleado1".......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla" time="0.000388">
+<testcase classname="representar asignacion de tareas" name="Se le quiere asignar una tarea libre a un empelado que tiene habilidades para resolverla" time="0.00039">
 <system-out><![CDATA[Dado que el "empleado1" que tiene la habilidad "JAVA".......................passed
 Cuando se le asigna la "tarea1" "libre" que requiere la habilidad "JAVA" al "empleado1".passed
 Entonces la "tarea1" queda asignada al "empleado1"..........................passed
